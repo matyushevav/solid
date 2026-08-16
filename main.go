@@ -27,12 +27,8 @@ func main() {
 		log.Fatal("Ошибка создания таблицы:", err)
 	}
 
-	log.Println("=== Демонстрация пункта 4: OrderService ===")
+	log.Println("=== Демонстрация работы OrderService ===")
 	log.Println()
-
-	// ============================================
-	// ДЕМОНСТРАЦИЯ: OrderService с разными отправителями
-	// ============================================
 
 	// 4. Создаем Email отправитель
 	emailSender := notifier.NewEmailSender()
@@ -45,7 +41,6 @@ func main() {
 	if err != nil {
 		log.Println("Ошибка:", err)
 	}
-	log.Println()
 
 	// 6. Создаем SMS отправитель
 	smsSender := notifier.NewSMSSender()
@@ -58,6 +53,5 @@ func main() {
 	if err != nil {
 		log.Println("Ошибка:", err)
 	}
-	log.Println()
 
 }

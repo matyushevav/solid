@@ -11,16 +11,15 @@ type SMSSender struct {
 	// Пока заглушка
 }
 
-
 // NewSMSSender - конструктор для создания SMSSender
 func NewSMSSender() *SMSSender {
-    return &SMSSender{}
+	return &SMSSender{}
 }
 
 // Send - реализует интерфейс Notifier
 // Отправляет SMS уведомление клиенту
 func (s *SMSSender) Send(customer string) error {
 	// Здесь должна быть реальная логика отправки SMS. Пока заглушка
-	fmt.Printf("📱 SMS уведомление отправлено клиенту %s\n", customer)
+	fmt.Printf("SMS уведомление отправлено клиенту %s\n", customer)
 	return nil
 }

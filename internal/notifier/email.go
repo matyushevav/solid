@@ -17,6 +17,6 @@ func NewEmailSender() *EmailSender {
 // Отправляет уведомление клиенту по email
 func (e *EmailSender) Send(customer string) error {
 	// Здесь должна быть реальная логика отправки email. Пока заглушка
-	fmt.Printf("📧 Email уведомление отправлено клиенту %s\n", customer)
+	fmt.Printf("Email уведомление отправлено клиенту %s\n", customer)
 	return nil
 }
